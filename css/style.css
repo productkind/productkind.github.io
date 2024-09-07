@@ -9,11 +9,6 @@ html {
   text-shadow: none;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 hr {
   display: block;
   height: 1px;
@@ -56,13 +51,6 @@ body {
   width: 320px;
   height: 320px;
   place-self: center;
-}
-
-@media print,
-  (min-device-pixel-ratio: 1.25),
-  (resolution >= 1.25dppx),
-  (resolution >= 120dpi) {
-  /* Style adjustments for high resolution devices */
 }
 
 @media print {

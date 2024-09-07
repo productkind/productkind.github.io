@@ -7,10 +7,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite",
+    "build": "vite build",
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint:css",
     "lint:css": "stylelint --fix \"css/*.css\"",
-    "init-repo": "husky init",
-    "build": "vite build"
+    "init-repo": "husky init"
   },
   "lint-staged": {
     "*.(js|ts|tsx|jsx|mjs|json|css|scss|sass|html|yaml|yml)": "prettier --write --ignore-path .gitignore"
