@@ -20,7 +20,10 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <img src="img/logo.png" alt="logo" class="logo" height="320" width="320">
+  <picture class="logo">
+    <source type="image/webp" srcset="img/logo-320.webp, img/logo-640.webp 2x">
+    <img src="img/logo-320.png" srcset="img/logo-320.png, img/logo-640.png 2x" alt="logo" height="320" width="320">
+  </picture>
 </body>
 
 </html>
