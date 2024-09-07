@@ -7,9 +7,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite",
+    "format": "prettier --write .",
+    "lint:css": "stylelint --fix \"css/*.css\"",
+    "init-repo": "husky init",
     "build": "vite build"
   },
+  "lint-staged": {
+    "*.(js|ts|tsx|jsx|mjs|json|css|scss|sass|html|yaml|yml)": "prettier --write --ignore-path .gitignore"
+  },
   "devDependencies": {
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
     "vite": "^5.4.3"
   }
 }

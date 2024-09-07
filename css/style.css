@@ -4,7 +4,7 @@ html {
   line-height: 1.4;
 }
 
-::-moz-selection {
+::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
@@ -59,9 +59,9 @@ body {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+  (min-device-pixel-ratio: 1.25),
+  (resolution >= 1.25dppx),
+  (resolution >= 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -71,6 +71,7 @@ body {
   *::after {
     background: #fff !important;
     color: #000 !important;
+
     /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -125,4 +126,3 @@ body {
     page-break-after: avoid;
   }
 }
-
